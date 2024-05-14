@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: "Reddit Sans", sans-serif;    
+}
+
+/* UTILITARIAS */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0F2620;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #7BA69A;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #A6444C;
+}
+
+.btn-light {
+    color: black;
+    background-color: #DDF2CE;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #302C2D;
+}
+
+/* HEADER */
+.header-fondo {
+    background-image: url(../images/bg-header-min.jpg);
+    height: 18.75em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-fondo {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.5em 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+@media (min-width:768px) {
+    .navbar-brand {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+.navbar-brand img {
+    width: 2em;
+}
+
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.563);
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.3em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: black;
+    background: #fff;
+    border-radius: 0.5em;
+}
+
+/* MAIN */
+.main {
+    margin-top: -2em;
+    background: #fff;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* TIENDA */
+@media (min-width:768px) {
+    .tienda {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+
+/* CARD */
+.card {
+    background-color: #A6444C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 200;
+}
+
+/* NOSOTROS */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #2F2E2E;
+}
+
+.nosotros-col-img {
+    order: 2;
+    background-image: url(../images/nosotros-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 21.875em;
+    width: 100%;
+}
+
+.nosotros-col-text {
+    order: 1;
+}
+
+@media (min-width:576px) {
+    .nosotros-col-img {
+        height: 31.25em;
+    }
+}
+
+@media (min-width:768px) {
+    .nosotros {
+        flex-direction: row;
+    }
+    .nosotros-col-img {
+        order: 1;
+        flex: 1 1 0;
+    }
+    .nosotros-col-text {
+        orphans: 2;
+        flex: 1 1 0;
+    }
+}
+
+.nosotros-body {
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotros-body p {
+    font-weight: 200;
+}
+
+/* FOOTER */
+.footer-fondo {
+    background: #302C2D;
+    color: #fff;
+}
+
+.footer-fondo p {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
